@@ -16,7 +16,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.page.description.slice(0, 160),
+          content: this.page.description,
         },
         { property: 'og:image', content: this.page.cover },
       ],

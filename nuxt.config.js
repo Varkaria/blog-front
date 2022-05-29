@@ -34,6 +34,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/google-fonts',
     'nuxt-windicss',
   ],
 
@@ -57,4 +58,12 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  googleFonts: {
+    families: {
+      Niramit: {
+        wght: [300, 400, 500, 600],
+      },
+    },
+  },
 }
