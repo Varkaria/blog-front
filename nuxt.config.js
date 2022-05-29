@@ -8,7 +8,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'I interested about technology, Review in the year',
+        content: 'I interested in technology, Review in the year',
       },
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'twitter:card', content: 'summary_large_image' },
