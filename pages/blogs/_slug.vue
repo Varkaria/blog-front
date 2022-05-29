@@ -1,9 +1,11 @@
 <script>
 export default {
   async asyncData({ params, $content, redirect }) {
-    const page = await $content(`blogs/${params.slug}`).fetch().catch(() => {
-      redirect('/')
-    })
+    const page = await $content(`blogs/${params.slug}`)
+      .fetch()
+      .catch(() => {
+        redirect('/')
+      })
     return { page }
   },
   head() {
@@ -25,7 +27,11 @@ export default {
 
 <template>
   <div class="space-y-6">
-    <img :src="page.cover" :alt="page.title" class="aspect-video sm:rounded-lg">
+    <img
+      :src="page.cover"
+      :alt="page.title"
+      class="aspect-video sm:rounded-lg"
+    >
 
     <div class="px-3 md:px-0">
       <div class="space-y-2">

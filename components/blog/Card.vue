@@ -19,7 +19,11 @@ export default {
 
 <template>
   <section class="space-y-4 transition-all transform hover:scale-95">
-    <img :src="cover" :alt="title" class="aspect-video rounded-lg overflow-hidden">
+    <img
+      :src="cover"
+      :alt="title"
+      class="aspect-video rounded-lg overflow-hidden"
+    >
     <div class="space-y-1">
       <h1 class="text-xl font-medium line-clamp-2">
         {{ title }}

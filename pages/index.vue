@@ -29,7 +29,11 @@ export default {
       </template>
       <template v-else>
         <NuxtLink v-for="a of blogs" :key="a.path" :to="a.path">
-          <BlogCard :title="a.title" :description="a.description" :cover="a.cover" />
+          <BlogCard
+            :title="a.title"
+            :description="a.description"
+            :cover="a.cover"
+          />
         </NuxtLink>
       </template>
     </div>
